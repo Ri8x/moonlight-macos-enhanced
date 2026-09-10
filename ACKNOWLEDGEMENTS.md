@@ -21,6 +21,10 @@ This repository is an enhanced macOS distribution in the Moonlight ecosystem. Th
 - **[`LizardByte/Sunshine`](https://github.com/LizardByte/Sunshine)** — Primary open host ecosystem targeted by modern Moonlight clients / 现代 Moonlight 客户端对接的主要开源主机端生态
 - **[`qiin2333/foundation-sunshine`](https://github.com/qiin2333/foundation-sunshine)** — Enhanced Sunshine fork relevant to microphone support, virtual display workflows, and extended interoperability / 与麦克风支持、虚拟显示流程和扩展互操作能力密切相关的增强版 Sunshine 分支
 
+## Contributed Work / 贡献者工作
+
+- **[@ste94pz](https://github.com/ste94pz)** — English localization coverage across the stream context menu, diagnostics overlay, debug log parser, connection editor, microphone manager, and settings app pane, plus the `InfoPlist.strings` build registration, contributed as [`skyhua0224/moonlight-macos-enhanced#44`](https://github.com/skyhua0224/moonlight-macos-enhanced/pull/44) and merged into this fork / 串流右键菜单、诊断浮层、日志解析、连接编辑器、麦克风管理与设置面板的英文本地化覆盖，以及 `InfoPlist.strings` 的构建注册，来自上游 PR #44 并已合入本分支
+
 ## Third-Party Libraries / 第三方库
 
 - **[`SDL2`](https://www.libsdl.org/)** — Input and platform integration / 输入与平台集成

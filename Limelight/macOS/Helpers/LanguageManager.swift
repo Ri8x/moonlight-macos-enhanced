@@ -71,9 +71,10 @@ public class LanguageManager: NSObject, ObservableObject {
     if useChinese {
       if let val = zhHans[key] { return val }
       if let val = localizedString(key, languageCode: "zh-Hans") { return val }
-      return key
     }
 
+    // English is the development language and the safe fallback for incomplete
+    // localization keys.
     if let val = en[key] { return val }
     if let val = localizedString(key, languageCode: "en") { return val }
     return key
@@ -129,29 +130,6 @@ public class LanguageManager: NSObject, ObservableObject {
     "Free Mouse hint": "Lets you switch back to macOS apps and displays more naturally. Best for desktop use.",
     "Current: %@": "Current: %@",
     "Switched to %@": "Switched to %@",
-
-    "Reconnect": "Reconnect",
-    "Window": "Window",
-    "Borderless Window": "Borderless Window",
-    "Show Floating Ball in Fullscreen": "Show Floating Ball in Fullscreen",
-    "Display": "Display",
-    "Custom...": "Custom\u{2026}",
-    "Current (Custom): %dx%d": "Current (Custom): %dx%d",
-    "Quality": "Quality",
-    "Apply": "Apply",
-    "Logs": "Logs",
-    "Show Logs": "Show Logs",
-    "Copy Logs": "Copy Logs",
-    "More": "More",
-    "Stuck %lus": "Stuck %lus",
-    "High Packet Loss": "High Packet Loss",
-    "OK": "OK",
-    "Width:": "Width:",
-    "Height:": "Height:",
-    "Custom Resolution and Frame Rate": "Custom Resolution and Frame Rate",
-    "Custom Resolution and Frame Rate hint":
-      "Enter the resolution (width x height) and frame rate (FPS) you want.\nA value of 0 lets the host decide (not recommended).",
-    "Custom FPS hint": "Enter the frame rate (FPS) you want.",
 
     "Remote Resolution": "Host Render Resolution",
     "Remote Resolution Value": "Host Render Resolution",
@@ -411,29 +389,6 @@ public class LanguageManager: NSObject, ObservableObject {
     "Free Mouse hint": "更方便切回 macOS 应用和其他显示器，更适合桌面远控。",
     "Current: %@": "当前：%@",
     "Switched to %@": "已切换到%@",
-
-    "Reconnect": "重连",
-    "Window": "窗口",
-    "Borderless Window": "无边框窗口",
-    "Show Floating Ball in Fullscreen": "全屏显示悬浮球",
-    "Display": "屏幕",
-    "Custom...": "自定义\u{2026}",
-    "Current (Custom): %dx%d": "当前（自定义）：%dx%d",
-    "Quality": "画质",
-    "Apply": "应用",
-    "Logs": "日志",
-    "Show Logs": "显示日志",
-    "Copy Logs": "复制日志",
-    "More": "更多",
-    "Stuck %lus": "卡住%lus",
-    "High Packet Loss": "高丢包",
-    "OK": "确定",
-    "Width:": "宽:",
-    "Height:": "高:",
-    "Custom Resolution and Frame Rate": "自定义分辨率与帧率",
-    "Custom Resolution and Frame Rate hint":
-      "请输入期望的分辨率（宽 x 高）和帧率（FPS）。\n设置为 0 代表由服务端决定（不建议）。",
-    "Custom FPS hint": "请输入期望的帧率（FPS）。",
 
     "Remote Resolution": "主机渲染分辨率",
     "Remote Resolution Value": "主机渲染分辨率",

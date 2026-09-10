@@ -1574,7 +1574,7 @@
     NSView *bitrateView = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 280, 70)];
 
     // 标题行
-    NSTextField *bitrateLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(16, 46, 60, 16)];
+    NSTextField *bitrateLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(16, 46, 120, 16)];
     bitrateLabel.bezeled = NO;
     bitrateLabel.drawsBackground = NO;
     bitrateLabel.editable = NO;
@@ -1662,7 +1662,7 @@
     NSMenu *audioMenu = [[NSMenu alloc] initWithTitle:MLString(@"Audio", nil)];
 
     NSView *volView = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 240, 28)];
-    NSTextField *volLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(10, 6, 42, 16)];
+    NSTextField *volLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(10, 6, 60, 16)];
     volLabel.bezeled = NO;
     volLabel.drawsBackground = NO;
     volLabel.editable = NO;
@@ -1673,7 +1673,7 @@
     [volView addSubview:volLabel];
 
     if (!self.menuVolumeSlider) {
-        self.menuVolumeSlider = [[NSSlider alloc] initWithFrame:NSMakeRect(58, 4, 170, 20)];
+        self.menuVolumeSlider = [[NSSlider alloc] initWithFrame:NSMakeRect(76, 4, 152, 20)];
         self.menuVolumeSlider.minValue = 0.0;
         self.menuVolumeSlider.maxValue = 1.0;
         self.menuVolumeSlider.target = self;
